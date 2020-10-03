@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import React from 'react'
 import blogStyle from '../styles/blog.module.scss'
 
-const BlogPage = () => {
+const MarkdownBlog = () => {
 
   const data = useStaticQuery(graphql`
   query{
@@ -27,7 +27,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <h2>Blog Posts</h2>
+      <h2>Markdown Blog Posts</h2>
       <ol className={blogStyle.posts}>
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
@@ -47,4 +47,4 @@ const BlogPage = () => {
   )
 }
 
-export default BlogPage
+export default MarkdownBlog

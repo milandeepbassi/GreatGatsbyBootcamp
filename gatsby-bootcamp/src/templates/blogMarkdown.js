@@ -15,7 +15,7 @@ export const query = graphql`
   }
 `
 
-const Blog = (props) => {
+const BlogMarkdown = (props) => {
   return (
     <Layout>
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
@@ -25,4 +25,4 @@ const Blog = (props) => {
   )
 }
 
-export default Blog
+export default BlogMarkdown
