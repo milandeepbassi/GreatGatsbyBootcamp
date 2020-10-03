@@ -1,3 +1,4 @@
+import Head from '../components/head'
 import Layout from "../components/layout"
 import React from "react"
 import { graphql } from "gatsby"
@@ -18,6 +19,7 @@ export const query = graphql`
 const BlogMarkdown = (props) => {
   return (
     <Layout>
+        <Head title={props.data.markdownRemark.frontmatter.title} />
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
         <p>{props.data.markdownRemark.frontmatter.date} | {props.data.markdownRemark.timeToRead}</p>
         <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>

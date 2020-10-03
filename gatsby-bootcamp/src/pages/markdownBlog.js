@@ -1,5 +1,6 @@
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
+import Head from '../components/head'
 import Layout from '../components/layout'
 import React from 'react'
 import blogStyle from '../styles/blog.module.scss'
@@ -27,6 +28,7 @@ const MarkdownBlog = () => {
 
   return (
     <Layout>
+      <Head title="Markdown Blog" />
       <h2>Markdown Blog Posts</h2>
       <ol className={blogStyle.posts}>
         {data.allMarkdownRemark.edges.map((edge) => {

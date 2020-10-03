@@ -5,7 +5,7 @@ import React from 'react'
 const IndexPage = () => {
   return (
     <Layout>
-      <Head/>
+      <Head title="Home" />
       <h2>Welcome to my new site.</h2>
     </Layout>
   )
