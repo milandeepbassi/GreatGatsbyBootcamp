@@ -10,7 +10,7 @@ const DefaultLayout = (props) => {
         <div className={layoutStyle.container}>
             <div className={layoutStyle.content}>
                 <Header/>
-                    {props.children}
+                {props.children}
             </div>
             <Footer/>
         </div>
