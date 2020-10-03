@@ -7,7 +7,7 @@ const Header = () => {
         <header className={headerStyle.header}>
             <h1>
                 <Link to="/" className={headerStyle.title}>
-                    Milandeep Bassi Logo
+                    Milandeep Bassi
                 </Link>
             </h1>
             <nav>
