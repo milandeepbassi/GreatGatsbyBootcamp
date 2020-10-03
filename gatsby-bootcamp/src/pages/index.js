@@ -1,9 +1,11 @@
-import React from 'react'
+import Head from '../components/head'
 import Layout from '../components/layout'
+import React from 'react'
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Head/>
       <h2>Welcome to my new site.</h2>
     </Layout>
   )
