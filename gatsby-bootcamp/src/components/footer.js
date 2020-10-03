@@ -6,13 +6,13 @@ const Footer = () => {
 
     const data = useStaticQuery(graphql`
     {
-        site {
-            siteMetadata {
-                author
-            }
+      site {
+        siteMetadata {
+          author
         }
+      }
     }
-    `)
+  `)
     
     return (
         <div>
